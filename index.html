@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>laba2_2</title>
-    <style>        
+    <style>
         body{
           margin:0;
             padding: 0;  
@@ -43,11 +43,13 @@
         
         form{
            height:300px;
-           width:800px;
+           width:55%;
         border:1px solid #E2E2E2;
             border-radius: 5px;
             margin:0 auto;
             margin-top: 200px;
+            min-width: 400px;
+            
         }
         
         
@@ -60,63 +62,39 @@
         }
         
         .line{
-            width: 750px;
+            width: 90%;
             height: 1px;
             background:#E2E2E2; 
-            margin-left: 25px;
-        }
-        
-        
-        
-        form nobr{
-            margin-left:200px;
-            margin-right: 30px;
-        }
-        
-        .checkText{
-            margin-left: 5px;
+            margin-left: 25px ;
         }
         
         .checkKeep{
-            margin-left: 320px;
+            margin-left:110px;
+            margin-top: 10px;
         }
         
-        .btnLogin{
-            margin-left: 320px;
-        }
         
-        .or{
-            margin-left: 10px;
-        }
-        
-        .singUp{
-            margin-left:-25px;
-        }
-        
-        .pass{
-            margin-right: 63px;
-        }
-        
-        .forgot{
-            margin-left: 320px;
-        }
-        
-        input{
+        .emailInput{
+            margin-left: 20px;
+            margin-top: 40px;
             margin-bottom: 10px;
         }
         
-        .emailInput{
-           margin-top: 40px; 
+        .pass{
+            margin-right: 53px;
         }
         
         .singUp{
            text-decoration: none;
             color:#3B6DAF;
             font-weight: bold;
+            font-size:13px;
         }
         
         .forgot{
             text-decoration: none;
+            font-size:13px;
+            margin-left: 110px;
         }
         
         .btnLogin{
@@ -125,6 +103,20 @@
             color:white;
             padding: 4px 8px;
             font-weight: bold;
+            margin-left: 110px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        
+
+       .wrapper{
+           width: 340px;
+           margin: 0 auto;
+        }
+
+        
+        .line{
+            margin-left: 25px;
         }
         
     </style>
@@ -139,20 +131,20 @@
     </header>
 
     <main>
-<form>
+        <form>
 
-    <p class="formTitile">Facebook Login</p>
-    <div class="line"></div>
-
-    <nobr style="color:#83666E; font-weight: bold; font-size:13px">Email or Phone:</nobr><input class="emailInput" type="text"><br>
-    <nobr class="pass" style="color:#83666E; font-weight: bold;font-size:13px">Password:</nobr><input type="text">
-    <br><input class="checkKeep" type="checkbox">
-    <nobr class="checkText">Keep me logged in</nobr><br>
-    <input class="btnLogin" type="submit" value="Log In">
-    <nobr class="or">or </nobr><a href="#" class="singUp">Sing up for Facebook</a><br>
-    <a class="forgot" href="#">Forgot your password?</a>
-
-</form>
+            <p class="formTitile">Facebook Login</p>
+            <div class="line"></div>
+            <div class="wrapper">
+                <nobr style="color:#83666E; font-weight: bold; font-size:13px">Email or Phone:</nobr><input class="emailInput" type="text"><br>
+                <nobr class="pass" style="color:#83666E; font-weight: bold;font-size:13px">Password:</nobr><input type="text">
+                <br><input class="checkKeep" type="checkbox">
+                <nobr class="checkText">Keep me logged in</nobr><br>
+                <input class="btnLogin" type="submit" value="Log In">
+                <nobr class="or">or </nobr><a href="#" class="singUp">Sing up for Facebook</a><br>
+                <a class="forgot" href="#">Forgot your password?</a>
+            </div>
+        </form>
     </main>
 
     <footer>
@@ -160,4 +152,5 @@
     </footer>
 
 </body>
-</html>
+
+</html> 
